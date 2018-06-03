@@ -38,3 +38,4 @@ class Student(models.Model):
     Contact_Number = PhoneNumberField(blank=False)
 
 
+
