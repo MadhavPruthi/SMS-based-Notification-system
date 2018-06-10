@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<title>
+E-NOTIFICATION SYSTEM</title>
+<style>
+
+</style>
+</head>
+<body>
+     <div class="w3-bar w3-border w3-black">
+  <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-large ">Home</a>
+  <a href="#About" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-large w3-hide-small">About</a>
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-large w3-hide-small ">Register</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="Student_SignUp.html" class="w3-bar-item w3-button">Student</a>
+      <a href="#" class="w3-bar-item w3-button">Faculty</a>
+    </div>
+  </div>
+		 <div class="w3-dropdown-hover">
+    <button class="w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-large w3-hide-small ">Login</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+      <a href="#" class="w3-bar-item w3-button">Student</a>
+      <a href="#" class="w3-bar-item w3-button">Faculty</a>
+    </div>
+  </div>
+
+  <a href="contact_Us.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-large w3-hide-small">Contact Us</a>
+   <a href="#" class="w3-bar-item w3-button w3-black w3-right w3-large w3-hide-small">Go</a>
+  <input type="text" class="w3-bar-item w3-input w3-right w3-large w3-hide-small" placeholder="Search..">
+
+</div>
+
+	<section>
+  <img class="mySlides" src="img_1.jpg"
+  style="width:100%">
+  <img class="mySlides" src="img_2.jfif"
+  style="width:100%">
+  <img class="mySlides" src="img_3.jfif"
+  style="width:100%" >
+</section>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+	<section id="About" class="w3-container w3-center w3-content" style="max-width:600px">
+		<h1 class="w3-wide"><b>SMS BASED E-NOTIFICATION SYSTEM</b></h1>
+  <p class="w3-opacity"><i>Now getting information isn't tough!!!</i></p>
+  <p class="w3-justify"># SMS-based-Notification-system
+Notification-System is a project which will help faculty to intimidate students about any important information like Schedule Changes, any upcoming seminar and other information. This information will be shared through SMS. Through other platforms like whatsapp, sometimes information got missed due to network gliches or any else reason, due to which we adopted SMS for message sharing.
+</p>
+</section>
+</body>
+</html>

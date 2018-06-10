@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.parallax1 {
+    /* The image used */
+
+    background-image: url('../Images/landscape.jpg');
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    /* The image used */
+
+    background-image: url('../Images/landscape2.jpg');
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#text1{
+    padding-top: 100px;
+    width: 700px;
+    margin: 0 auto;
+    color: white;
+    min-height: 300px;
+    font-size: 20px;
+
+}
+
+#maintext1{
+
+    font-family: 'Pacifico', cursive;
+      text-decoration:none;
+      color:white;
+      transition: all .2s ease-in;
+}
+
+#maintext1:hover{
+      padding:2px;
+      font-size: 40px;
+}
+
+.card-panel{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
