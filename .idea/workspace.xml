@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57c39441-30a7-49c1-9b89-a84c75e4d111" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/About/Student_SignUp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/About/img_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/About/img_2.jfif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/About/img_3.jfif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/About/img_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/About/img_5.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/About/img_6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/background.jfif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/first.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/user.jfif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/notification.iml" afterPath="$PROJECT_DIR$/.idea/notification.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Notification_System/settings.py" afterPath="$PROJECT_DIR$/src/Notification_System/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Notification_System/urls.py" afterPath="$PROJECT_DIR$/src/Notification_System/urls.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/About/About.html" afterPath="$PROJECT_DIR$/src/templates/About.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/About/contact_Us.html" afterPath="$PROJECT_DIR$/src/templates/contact_Us.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/About/main.html" afterPath="$PROJECT_DIR$/src/templates/main.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/About/w3.css" afterPath="$PROJECT_DIR$/src/static/css/w3.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/background.jfif" afterPath="$PROJECT_DIR$/src/static/Images/background.jfif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/first.jpg" afterPath="$PROJECT_DIR$/src/static/Images/first.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/user.jfif" afterPath="$PROJECT_DIR$/src/static/Images/user.jfif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/accounts/Student_Sign_Up.html" afterPath="$PROJECT_DIR$/src/templates/Student_Sign_Up.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/accounts/style.css" afterPath="$PROJECT_DIR$/src/static/css/style.css" />
-    </list>
+    <list default="true" id="57c39441-30a7-49c1-9b89-a84c75e4d111" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
