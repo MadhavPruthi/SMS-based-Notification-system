@@ -12,7 +12,7 @@
     <link rel = "stylesheet"
      href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
 
-    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src = "{% static 'materialize/js/jquery.js' %}"></script>
 
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 
@@ -27,6 +27,7 @@
             margin-left: 5px;
         }
     </style>
+
     {% block style %}
     {% endblock %}
 
@@ -47,11 +48,10 @@
         </nav>
     </div>
 
-
     {% block main %}
     {% endblock %}
 
-    <footer class="page-footer">
+    <!--<footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -74,7 +74,7 @@
 
             </div>
           </div>
-    </footer>
+    </footer> -->
 
     {% block js %}
     {% endblock %}
