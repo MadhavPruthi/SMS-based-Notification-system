@@ -2,23 +2,22 @@
 
 #main1,#main2
 {
-    height:530px;
-    width: 400px;
+    height:500px;
+    width: 450px;
     box-shadow: 0 0 0 30px rgba(255,255,255,.2);
     background-color: white;
-    border-radius: 50%;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%) rotateY(0deg);
 }
 #form1,#form2
 {
-    height:400px;
+    height:500px;
     width: 350px;
     position: fixed;
-    top: 40%;
-    left: 65%;
+    top: 45%;
+    left: 45%;
     transform: translate(-50%,-50%);
 }
 
