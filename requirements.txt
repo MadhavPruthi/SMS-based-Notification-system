@@ -1,2 +1,5 @@
+Babel==2.6.0
 Django==1.11
+django-phonenumber-field==2.0.0
+phonenumberslite==8.9.7
 pytz==2018.4
