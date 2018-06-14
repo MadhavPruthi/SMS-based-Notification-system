@@ -1,0 +1,214 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+
+    <link rel="stylesheet" href="{% static 'css/signupform.css' %}">
+
+{% endblock %}
+
+{% block main %}
+
+    <script>
+
+        $(document).ready(function() {
+
+        $('select').material_select();
+         });
+
+
+    </script>
+
+    <div id="main1">
+        <div class="col l6 offset-l3 m9 offset-m1">
+            <div id="form1">
+
+                <h4 class="center-align">STUDENT</h4>
+                <h5 class="">-SIGNUP-</h5>
+
+                <div class="input-field">
+                    <input type="text" id="studentname">
+                    <label class="active" for="studentname">Full Name</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" id="studentid">
+                    <label class="active" for="studentid">Student ID</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="email" id="email">
+                    <label class="active" for="email">E-mail</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="tel" id="contact">
+                    <label class="active" for="contact">Contact Number</label>
+                </div>
+
+                <div class="input-field" id="select1">
+
+                <select>
+
+                    <option value="" disabled selected>Branch</option>
+                    <optgroup label="Circuital">
+                        <option value="3">Computer Science</option>
+                        <option value="4">Electrical</option>
+                        <option value="5">Electronics & Communication</option>
+                    </optgroup>
+                    <optgroup label="Non-Circuital">
+                        <option value="1">Aerospace</option>
+                        <option value="2">Civil</option>
+                        <option value="6">Mechanical</option>
+                        <option value="7">Materials & Metallurgical</option>
+                        <option value="8">Production & Industrial</option>
+                    </optgroup>
+
+                </select>
+
+              </div>
+
+              <div class="input-field" id="select2">
+
+                <select>
+
+                    <option value="" disabled selected>Year of Study</option>
+
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+
+                </select>
+
+              </div>
+
+
+                <div class="input-field">
+                    <input type="password" id="password1">
+                    <label class="active" for="password1">Create New Password</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="password" id="password2">
+                    <label class="active" for="password2">Confirm New Password</label>
+                </div>
+
+
+                <br>
+
+                <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Create Account
+                    <i class="material-icons right">send</i>
+                </button>
+
+                <br><br><br>
+
+                <p class="text-muted center-align">Staff Member? <a id="fliptofaculty" style="cursor: pointer">Go Here</a> </p>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+     <div class="parallax1"></div>
+
+     <div id="main2">
+        <div class="col l6 offset-l3 m9 offset-m1">
+            <div id="form2">
+
+                <h4 class="center-align">STAFF</h4>
+                <h5 class="">-SIGNUP-</h5>
+
+                <div class="input-field">
+                    <input type="text" id="facutyname">
+                    <label class="active" for="facutyname">Full Name</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" id="facultyid">
+                    <label class="active" for="facultyid">Faculty ID</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="email" id="email">
+                    <label class="active" for="email">E-mail</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="tel" id="contact">
+                    <label class="active" for="contact">Contact Number</label>
+                </div>
+
+                <div class="input-field" id="select1">
+
+                <select>
+
+                    <option value="" disabled selected>Department</option>
+                    <optgroup label="Circuital">
+                        <option value="3">Computer Science</option>
+                        <option value="4">Electrical</option>
+                        <option value="5">Electronics & Communication</option>
+                    </optgroup>
+                    <optgroup label="Non-Circuital">
+                        <option value="1">Aerospace</option>
+                        <option value="2">Civil</option>
+                        <option value="6">Mechanical</option>
+                        <option value="7">Materials & Metallurgical</option>
+                        <option value="8">Production & Industrial</option>
+                    </optgroup>
+
+                </select>
+
+              </div>
+
+              <div class="input-field" id="select2">
+
+                <select>
+
+                    <option value="" disabled selected>Designation</option>
+
+                        <option value="1">Professor</option>
+                        <option value="2">Associate Professor</option>
+                        <option value="3">Assistant Professor</option>
+                        <option value="4">PhD Scholar</option>
+
+                </select>
+
+              </div>
+
+
+                <div class="input-field">
+                    <input type="password" id="password1">
+                    <label class="active" for="password1">Create New Password</label>
+                </div>
+
+                <div class="input-field">
+                    <input type="password" id="password2">
+                    <label class="active" for="password2">Confirm New Password</label>
+                </div>
+
+
+                <br>
+
+                <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Create Account
+                    <i class="material-icons right">send</i>
+                </button>
+
+                <br><br><br>
+
+                <p class="text-muted center-align">Student? <a id="fliptostudent" style="cursor: pointer">Go Here</a> </p>
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block js %}
+
+    <script src="{% static 'js/loginform.js' %}"></script>
+
+{% endblock %}
