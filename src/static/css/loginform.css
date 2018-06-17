@@ -45,7 +45,7 @@
 }
 
 
-.parallax1 {
+#parallax1 {
     /* The image used */
 
     background-image: url('../Images/landscape.jpg');
