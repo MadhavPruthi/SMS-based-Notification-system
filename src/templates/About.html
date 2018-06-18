@@ -1,43 +1,29 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../static/w3.css">
-<title>Untitled Document</title>
-</head>
+{% extends 'base.html' %}
+{% load static %}
 
-<body>
-	<div class="w3-bar w3-border w3-black">
-  <a href="main.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-large ">Home</a>
-  <a href="#About" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-large w3-hide-small">About</a>
-  <div class="w3-dropdown-hover">
-    <button class="w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-large w3-hide-small ">Register</button>
-    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-      <a href="Student_SignUp.html" class="w3-bar-item w3-button">Student</a>
-      <a href="#" class="w3-bar-item w3-button">Faculty</a>
+{% block main %}
+
+    <div class="row">
+    <div class="col s3">
+
+    <div class="card">
+
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="{% static 'Images/landscape.jpg' %}">
+        </div>
+
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+
     </div>
-  </div>
-		 <div class="w3-dropdown-hover">
-    <button class="w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-large w3-hide-small ">Login</button>
-    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-      <a href="#" class="w3-bar-item w3-button">Student</a>
-      <a href="#" class="w3-bar-item w3-button">Faculty</a>
     </div>
-  </div>
+    </div>
 
-  <a href="contact_Us.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-large w3-hide-small">Contact Us</a>
-   <a href="#" class="w3-bar-item w3-button w3-black w3-right w3-large w3-hide-small">Go</a>
-  <input type="text" class="w3-bar-item w3-input w3-right w3-large w3-hide-small" placeholder="Search..">
-
-</div>
-
-		<section id="About" class="w3-container w3-center w3-content" style="max-width:600px">
-		<h1 class="w3-wide"><b>SMS BASED E-NOTIFICATION SYSTEM</b></h1>
-  <p class="w3-opacity"><i>Now getting information isn't tough!!!</i></p>
-  <p class="w3-justify"># SMS-based-Notification-system
-Notification-System is a project which will help faculty to intimidate students about any important information like Schedule Changes, any upcoming seminar and other information. This information will be shared through SMS. Through other platforms like whatsapp, sometimes information got missed due to network gliches or any else reason, due to which we adopted SMS for message sharing.
-</p>
-</section>
-</body>
-</html>
+{% endblock %}

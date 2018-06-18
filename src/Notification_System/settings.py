@@ -25,7 +25,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts',
-    'phonenumber_field'
+    'phonenumber_field',
+    'background_task',
 ]
 
 MIDDLEWARE = [
@@ -95,7 +96,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -118,3 +119,9 @@ STATICFILES_DIRS = [
 # will be served
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static-serve")
 
+# Nexmo settings
+
+# Nexmo Credentials
+
+KEY = '4fe6b36d'
+SECRET = '36b1dda4afbc64a8'
