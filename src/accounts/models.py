@@ -45,3 +45,10 @@ class FacultyCourse(models.Model):
     FacultyUser = models.ForeignKey(Faculty, on_delete=models.CASCADE)
     Semester = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(8)])
 
+class queries(models.model):
+    QueryId = models.IntegerField(max_length=8,blank=False,unique=True)
+    CourseId = models.ForeignKey(Course, on_delete=models.CASCADE)
+
+class Notif(models.model):
+    NotifId = models.IntegerField(max_length=8,blank=False,unique=True)
+
