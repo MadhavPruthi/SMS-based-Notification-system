@@ -7,7 +7,7 @@ urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include(accounts_urls)),
-    url(r'^form/$', TemplateView.as_view(template_name='accounts/form.html')),
+    url(r'^main/$', TemplateView.as_view(template_name='accounts/main.html'), name='main'),
     url(r'^login/$', TemplateView.as_view(template_name='accounts/loginForm.html')),
     url(r'^signup/$', TemplateView.as_view(template_name='accounts/signupForm.html')),
     url(r'^about/$', TemplateView.as_view(template_name='About.html')),
