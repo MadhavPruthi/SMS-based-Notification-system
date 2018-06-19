@@ -45,3 +45,4 @@ class FacultyCourse(models.Model):
     FacultyUser = models.ForeignKey(Faculty, on_delete=models.CASCADE)
     Semester = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(8)])
 
+

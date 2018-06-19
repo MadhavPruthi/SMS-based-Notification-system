@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c39441-30a7-49c1-9b89-a84c75e4d111" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/Student_Sign_Up.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/contact_Us.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/main.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/Images/img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/Images/img_5.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/Images/img_6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/contact/img_4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/css/contact.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/contact/contact_us.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/Images/background.jfif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/Images/first.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/Images/user.jfif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Notification_System/urls.py" afterPath="$PROJECT_DIR$/src/Notification_System/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/accounts/models.py" afterPath="$PROJECT_DIR$/src/accounts/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/accounts/views.py" afterPath="$PROJECT_DIR$/src/accounts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/accounts/loginForm.html" afterPath="$PROJECT_DIR$/src/templates/accounts/loginForm.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/templates/accounts/form.html" afterPath="$PROJECT_DIR$/src/templates/accounts/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/accounts/main.html" afterPath="$PROJECT_DIR$/src/templates/accounts/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/accounts/signupForm.html" afterPath="$PROJECT_DIR$/src/templates/accounts/signupForm.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,14 +35,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/accounts/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-75">
-              <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+              <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
+                <marker date="1529397538222" expanded="true" signature="238:929" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/accounts/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,7 +113,6 @@
         <option value="$PROJECT_DIR$/src/static/css/signupform.css" />
         <option value="$PROJECT_DIR$/src/templates/accounts/signupForm.html" />
         <option value="$PROJECT_DIR$/src/accounts/forms.py" />
-        <option value="$PROJECT_DIR$/src/accounts/models.py" />
         <option value="$PROJECT_DIR$/src/accounts/urls.py" />
         <option value="$PROJECT_DIR$/src/templates/base.html" />
         <option value="$PROJECT_DIR$/src/templates/About.html" />
@@ -109,6 +125,7 @@
         <option value="$PROJECT_DIR$/src/Notification_System/urls.py" />
         <option value="$PROJECT_DIR$/src/templates/accounts/loginForm.html" />
         <option value="$PROJECT_DIR$/src/accounts/views.py" />
+        <option value="$PROJECT_DIR$/src/accounts/models.py" />
       </list>
     </option>
   </component>
@@ -787,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/Images/first.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -862,10 +872,19 @@
     <entry file="file://$PROJECT_DIR$/src/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
-          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+          <caret line="3" column="44" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
+            <marker date="1529397538222" expanded="true" signature="238:929" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
