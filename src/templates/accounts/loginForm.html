@@ -12,28 +12,37 @@
 
      <div id="parallax1"></div>
 
-    <div id="main1">
+     <div id="main1">
+
         <div class="col l6 offset-l3 m9 offset-m1">
+
             <div id="form1">
 
                 <h4 class="center-align">STUDENT</h4>
                 <h5 class="">-LOGIN-</h5>
 
-                <div class="input-field">
-                    <input type="text" id="studentid">
-                    <label class="active" for="studentid">Student ID</label>
-                </div>
+                <form method="post" action="{% url 'accounts:login' %}">
 
-                <div class="input-field">
-                    <input type="password" id="password">
-                    <label class="active" for="password">Password</label>
-                </div>
+                    {% csrf_token %}
 
-                <br>
 
-                <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Login
-                    <i class="material-icons right">send</i>
-                </button>
+                    <div class="input-field">
+                        <input type="text" name="username" required>
+                        <label class="active" for="studentid">Student ID</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="password" required>
+                        <label class="active" for="password">Password</label>
+                    </div>
+
+                    <br>
+
+                    <button class="btn waves-effect waves-light btn-large" type="submit" name="action" value="student">Login
+                        <i class="material-icons right">send</i>
+                    </button>
+
+                    </form>
 
                 <p class="text-muted center-align">Staff Member? <a id="fliptofaculty" style="cursor: pointer">Go Here</a> </p>
 
@@ -50,21 +59,29 @@
                 <h4 class="center-align">STAFF</h4>
                 <h5 class="">-LOGIN-</h5>
 
-                <div class="input-field">
-                    <input type="text" id="facultyid">
-                    <label class="active" for="facultyid">Faculty ID</label>
-                </div>
+                <form method="post" action="{% url 'accounts:login' %}">
 
-                <div class="input-field">
-                    <input type="password" id="password">
-                    <label class="active" for="password">Password</label>
-                </div>
+                    {% csrf_token %}
 
-                <br>
+                    <input type="hidden" name="check" value="staff">
 
-                <button class="btn waves-effect waves-light btn-large" type="submit" name="action" >Login
-                    <i class="material-icons right">send</i>
-                </button>
+                    <div class="input-field">
+                        <input type="text" name="username" required>
+                        <label class="active" for="facultyid">Faculty ID</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="password" required>
+                        <label class="active" for="password">Password</label>
+                    </div>
+
+                    <br>
+
+                    <button class="btn waves-effect waves-light btn-large" type="submit" name="action" value="staff">Login
+                        <i class="material-icons right">send</i>
+                    </button>
+
+                </form>
 
                 <p class="text-muted center-align">Student? <a id="fliptostudent" style="cursor: pointer">Go Here</a> </p>
 
