@@ -6,4 +6,7 @@ app_name = 'accounts'
 urlpatterns = [
 
     url(r'^login/$', LoginView , name="login"),
+
+    url(r'^signup/$', SignUpView, name="signup")
+
 ]
