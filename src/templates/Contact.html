@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+{% endblock %}
+{% block main %}
+
+    <div class="container-fluid">
+        <div class="center-align" style="top: 35%;position: relative">
+            <h2 class="white-text">DEVELOPERS TEAM</h2>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="{% static 'Images/landscape.jpg' %}"></div>
+    </div>
+
+    <div class="row">
+      <div class="col m4 offset-m2 s12">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                  <div class="row">
+                    <div class="col s12 m12">
+                          <div class="card brown darken-1">
+                            <div class="card-image">
+                              <img src="{% static 'Images/img_6.jpg' %}">
+                              <span class="card-title">Madhav Pruthi</span>
+                            </div>
+                            <div class="card-content white-text">
+                              <p>Punjab Engineering College</p>
+                            </div>
+                          </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="back">
+                      <div class="row">
+                        <div class="col s12">
+                          <div class="card white">
+                            <div class="card-content black-text">
+                              <span class="card-title">About Me!</span>
+                                <p>B.Tech 3rd Year</p>
+                                <p>Contact: </p>
+                                <p>E-mail</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col m4 offset-m2 s12">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                  <div class="row">
+                    <div class="col s12 m12">
+                          <div class="card brown darken-1">
+                            <div class="card-image">
+                              <img src="{% static 'Images/img_5.jpg' %}">
+                              <span class="card-title">Shreya Garg</span>
+                            </div>
+                            <div class="card-content white-text">
+                              <p>Punjab Engineering College</p>
+                            </div>
+                          </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="back">
+                      <div class="row">
+                        <div class="col s12">
+                          <div class="card white">
+                            <div class="card-content black-text">
+                              <span class="card-title">About Me!</span>
+                                <p>B.Tech 3rd Year</p>
+                                <p>Contact: </p>
+                                <p>E-mail</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col m4 offset-m2 s12">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                  <div class="row">
+                    <div class="col s12 m12">
+                          <div class="card brown darken-1">
+                            <div class="card-image">
+                              <img src="{% static 'Images/img_4.jpg' %}">
+                              <span class="card-title">Guneet Bajaj</span>
+                            </div>
+                            <div class="card-content white-text">
+                              <p>Punjab Engineering College</p>
+                            </div>
+                          </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="back">
+                      <div class="row">
+                        <div class="col s12">
+                          <div class="card white">
+                            <div class="card-content black-text">
+                              <span class="card-title">About Me!</span>
+                                <p>B.Tech 3rd Year</p>
+                                <p>Contact: </p>
+                                <p>E-mail</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+    <script>
+
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+
+     </script>
+
+{% endblock %}

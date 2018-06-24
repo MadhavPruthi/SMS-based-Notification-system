@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nexmo
+Version: 2.1.0
+Summary: Nexmo Client Library for Python
+Home-page: http://github.com/Nexmo/nexmo-python
+Author: Tim Craft
+Author-email: mail@timcraft.com
+License: MIT
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: requests
+Requires-Dist: PyJWT[crypto]
+Requires-Dist: pytz
+
+This is the Python client library for Nexmo's API. To use it you'll need a Nexmo account. Sign up `for free at nexmo.com <http://nexmo.com?src=python-client-library>`_.
+
+
