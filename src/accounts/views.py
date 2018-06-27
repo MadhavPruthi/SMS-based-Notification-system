@@ -1,7 +1,10 @@
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth.models import User
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from src.accounts.forms import SignUpStudentForm, SignUpFacultyForm
+from src.accounts.models import Student, Faculty
 
 
 def LoginView(request):
@@ -16,6 +19,7 @@ def LoginView(request):
 
                 user = form.get_user()
                 request.session['user'] = 'student'
+                request.session['username'] = Student.StudentID
                 login(request, user)
                 return HttpResponse('You are logged in Student')
 
@@ -27,6 +31,7 @@ def LoginView(request):
 
                 user = form.get_user()
                 request.session['user'] = 'staff'
+                request.session['username'] = Faculty.FacultyID
                 login(request, user)
                 return HttpResponse('You are logged in Staff')
 
@@ -35,4 +40,41 @@ def LoginView(request):
         return render(request, 'accounts/loginForm.html' ,{})
 
 
+def SignUpView(request):
 
+    if request.method == "POST":
+
+        if request.POST['action'] == "student":
+
+            form = SignUpStudentForm(request.POST)
+
+            if form.is_valid():
+
+                instance = form.save(commit=False)
+
+                username = form.cleaned_data.get('StudentID')
+                password = form.cleaned_data.get('password')
+
+                user = User.objects.create_user(username=username)
+                user.set_password(password)
+                user.save()
+
+                instance.user = user
+                instance.save()
+
+                user = authenticate(username=username, password=password)
+                login(request, user)
+                print("Done")
+
+                return redirect('main')
+
+        else:
+
+            form = SignUpFacultyForm(request.POST)
+
+            if form.is_valid():
+                pass
+
+    else:
+
+        return render(request, 'accounts/signupForm.html', {})
