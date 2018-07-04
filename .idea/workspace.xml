@@ -2,71 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbe9d2be-d90c-422b-ae12-0685de50a44d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification_System/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification_System/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification_System/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Notification_System/wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/forms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/accounts/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/manage.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/query/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/query/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/query/apps.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/query/forms.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/query/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/query/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/query/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/query/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/query/views.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/Images/back2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/Images/img_4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/Images/img_5.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/Images/img_6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/Images/landscape.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/Images/landscape2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/css/contact.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/css/faculty_Home.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/css/loginform.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/css/signupform.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/css/w3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/js/faculty_Home.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/js/loginform.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/js/signupform.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/materialize/css/materialize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/materialize/css/materialize.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/materialize/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/materialize/js/materialize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/static/materialize/js/materialize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/About.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/Contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/accounts/Faculty_Home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/accounts/loginForm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/accounts/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/accounts/signupForm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/base.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/notification.iml" afterPath="$PROJECT_DIR$/.idea/notification.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/static/css/Query.css" afterPath="$PROJECT_DIR$/source/static/css/Query.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/templates/Query/Query.html" afterPath="$PROJECT_DIR$/source/templates/Query/Query.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/Notification_System/urls.py" afterPath="$PROJECT_DIR$/source/Notification_System/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/accounts/views.py" afterPath="$PROJECT_DIR$/source/accounts/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,12 +16,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/Notification_System/settings.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Notification_System/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/accounts/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,6 +60,8 @@
         <option value="$PROJECT_DIR$/folder/accounts/views.py" />
         <option value="$PROJECT_DIR$/folder/Notification_System/settings.py" />
         <option value="$PROJECT_DIR$/source/Notification_System/settings.py" />
+        <option value="$PROJECT_DIR$/source/Notification_System/urls.py" />
+        <option value="$PROJECT_DIR$/source/accounts/views.py" />
       </list>
     </option>
   </component>
@@ -148,6 +102,56 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Notification_System" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notification" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accounts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -348,8 +352,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3888" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3216" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16490166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3216" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16490166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -375,26 +379,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/Notification_System/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/Notification_System/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -405,9 +389,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/Notification_System/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="378">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Notification_System/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
