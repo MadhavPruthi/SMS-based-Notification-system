@@ -3,8 +3,8 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from src.accounts.forms import SignUpStudentForm, SignUpFacultyForm
-from src.accounts.models import Student, Faculty
+from folder.accounts.forms import SignUpStudentForm, SignUpFacultyForm
+from folder.accounts.models import Student, Faculty
 
 
 def LoginView(request):

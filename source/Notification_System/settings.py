@@ -25,10 +25,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'accounts',
+    'source.accounts',
     'phonenumber_field',
     'background_task',
-    'Query',
+    'query',
     'Notification',
 
 ]

@@ -15,6 +15,7 @@ class Student(models.Model):
     Email = models.EmailField(blank=False)
 
 
+
 class Faculty(models.Model):
 
     User = models.OneToOneField(User, on_delete=models.CASCADE, default=None)

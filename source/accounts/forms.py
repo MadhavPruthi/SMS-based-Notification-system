@@ -1,13 +1,13 @@
 from django import forms
 from django.core.exceptions import ValidationError
-
-from src.accounts.models import Student, Faculty
+from .models import Student, Faculty
 
 
 class SignUpStudentForm(forms.ModelForm):
+
     class Meta:
+        exclude = ('User',)
         model = Student
-        fields = '__all__'
 
     def clean(self):
 
@@ -23,9 +23,11 @@ class SignUpStudentForm(forms.ModelForm):
 
 
 class SignUpFacultyForm(forms.ModelForm):
+
     class Meta:
+        exclude = ('User',)
         model = Faculty
-        fields = '__all__'
+
 
     def clean(self):
 

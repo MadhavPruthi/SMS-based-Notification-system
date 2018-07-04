@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class QueryConfig(AppConfig):
-    name = 'Query'
+    name = 'templates.Query'
