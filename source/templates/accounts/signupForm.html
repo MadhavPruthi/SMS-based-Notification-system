@@ -19,6 +19,8 @@
     </script>
 
     <form action="{% url 'accounts:signup' %}" method="POST">
+    {% csrf_token %}
+
         <div id="main1">
             <div class="col l6 offset-l3 m9 offset-m1">
                 <div id="form1">
@@ -27,28 +29,28 @@
                     <h5 class="">-SIGNUP-</h5>
 
                     <div class="input-field">
-                        <input type="text" name="Name" id="studentname">
+                        <input type="text" name="Name" id="studentname" required>
                         <label class="active" for="studentname">Full Name</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="text" name="StudentID" id="studentid">
+                        <input type="text" name="StudentID" id="studentid" required>
                         <label class="active" for="studentid">Student ID</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="email" name="Email" id="email">
+                        <input type="email" name="Email" id="email" required>
                         <label class="active" for="email">E-mail</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="tel" name="ContactNumber" id="contact">
+                        <input type="tel" name="ContactNumber" id="contact" required>
                         <label class="active" for="contact">Contact Number</label>
                     </div>
 
                     <div class="input-field" id="select1">
 
-                    <select name="YearOfStudy">
+                    <select name="YearOfStudy" required>
 
                         <option value="" disabled selected>Branch</option>
                         <optgroup label="Circuital">
@@ -70,7 +72,7 @@
 
                   <div class="input-field" id="select2">
 
-                    <select name="Branch">
+                    <select name="Branch" required>
 
                         <option value="" disabled selected>Year of Study</option>
 
@@ -85,12 +87,12 @@
 
 
                     <div class="input-field">
-                        <input type="password" id="password1">
+                        <input type="password" name="password1" id="password1" required>
                         <label class="active" for="password1">Create New Password</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="password" id="password2">
+                        <input type="password" name="password2" id="password2" required>
                         <label class="active" for="password2">Confirm New Password</label>
                     </div>
 
@@ -117,6 +119,8 @@
      <div class="parallax1"></div>
 
     <form action="{% url 'accounts:signup' %}" method="POST">
+    {% csrf_token %}
+
          <div id="main2">
             <div class="col l6 offset-l3 m9 offset-m1">
                 <div id="form2">
@@ -125,28 +129,28 @@
                     <h5 class="">-SIGNUP-</h5>
 
                     <div class="input-field">
-                        <input type="text" name="Name" id="facutyname">
+                        <input type="text" name="Name" id="facutyname" required>
                         <label class="active" for="facutyname">Full Name</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="text" name="FacultyID" id="facultyid">
+                        <input type="text" name="FacultyID" id="facultyid" required>
                         <label class="active" for="facultyid">Faculty ID</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="email" name="Email" id="email">
+                        <input type="email" name="Email" id="email" required>
                         <label class="active" for="email">E-mail</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="tel" name="ContactNumber" id="contact">
+                        <input type="tel" name="ContactNumber" id="contact" required>
                         <label class="active" for="contact">Contact Number</label>
                     </div>
 
                     <div class="input-field" id="select1">
 
-                    <select name="Department">
+                    <select name="Department" required>
 
                         <option value="" disabled selected>Department</option>
                         <optgroup label="Circuital">
@@ -168,7 +172,7 @@
 
                   <div class="input-field" id="select2">
 
-                    <select name="Designation">
+                    <select name="Designation" required>
 
                         <option value="" disabled selected>Designation</option>
 
@@ -183,12 +187,12 @@
 
 
                     <div class="input-field">
-                        <input type="password" id="password1">
+                        <input type="password" name="password1" id="password1" required>
                         <label class="active" for="password1">Enter Paaword</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="password" id="password2">
+                        <input type="password" name="password2" id="password2" required>
                         <label class="active" for="password2">Confirm Password</label>
                     </div>
 

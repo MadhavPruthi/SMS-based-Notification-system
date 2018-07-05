@@ -1,50 +1,28 @@
-
 {% extends 'base.html' %}
 {% load static %}
+
 {% block style %}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="{% static 'css/w3.css' %}">
-<link rel="stylesheet" href="{% static 'css/Query.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/Query.css' %}">
+
 {% endblock %}
+
 {% block main %}
-<blockquote>
-<h1 style="color: #880e4f">
-      QUERY FORM</h1>
+
+    <blockquote>
+
+    <h1 style="color: #880e4f">QUERY FORM</h1>
     </blockquote>
-  <form method="post" novalidate>
+
+  <form method="post" action="#">
+
   {% csrf_token %}
-<div class="card">
-    <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field ">
-          <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-          <label for="icon_prefix2">Title</label>
-        </div>
 
-      </div>
-      <div class="row">
-        <div class="input-field">
-          <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-          <label for="icon_prefix2">Query To</label>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="input-field ">
-             <i class="material-icons prefix">mode_edit</i>
-           <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
-            <label for="textarea2">Message</label>
-        </div>
-      </div>
 
-    </form>
-  </div>
 
-  <a class="waves-effect waves-light btn center">Submit</a>
-  </div>
+  </form>
 
-</form>
+
 {% endblock %}

@@ -9,6 +9,8 @@ from source.accounts.models import Student, Faculty
 
 def LoginView(request):
 
+
+
     if request.method == "POST":
 
         if request.POST['action'] == "student":
@@ -67,6 +69,9 @@ def SignUpView(request):
                 print("Done")
 
                 return redirect('main')
+
+            else:
+                return render(request, 'accounts/signupForm.html', {})
 
         else:
 

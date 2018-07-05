@@ -1,7 +1,9 @@
 from django.shortcuts import render
 from .forms import QueryForm
 
-def Query(request):
+
+def CreateQueryView(request):
+
     if request.method == 'POST':
         form = QueryForm(request.POST)
         if form.is_valid():

@@ -5,6 +5,9 @@ from .models import Student, Faculty
 
 class SignUpStudentForm(forms.ModelForm):
 
+    password1 = forms.CharField(widget=forms.PasswordInput)
+    password2 = forms.CharField(widget=forms.PasswordInput)
+
     class Meta:
         exclude = ('User',)
         model = Student
@@ -27,7 +30,6 @@ class SignUpFacultyForm(forms.ModelForm):
     class Meta:
         exclude = ('User',)
         model = Faculty
-
 
     def clean(self):
 
