@@ -9,8 +9,6 @@ from source.accounts.models import Student, Faculty
 
 def LoginView(request):
 
-
-
     if request.method == "POST":
 
         if request.POST['action'] == "student":
@@ -61,16 +59,17 @@ def SignUpView(request):
                 user.set_password(password)
                 user.save()
 
-                instance.user = user
+                instance.User = user
                 instance.save()
 
-                user = authenticate(username=username, password=password)
-                login(request, user)
-                print("Done")
+                if user.is_authenticated():
+                    login(request, user)
+                    print("Done")
 
-                return redirect('main')
+                    return redirect('main')
 
             else:
+                print(form.errors)
                 return render(request, 'accounts/signupForm.html', {})
 
         else:

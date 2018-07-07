@@ -1,65 +1,21 @@
 {% extends 'base.html' %}
-{%  load static %}
+{% load static %}
+
 {% block style %}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="{% static 'css/w3.css' %}">
-<link rel="stylesheet" href="{% static 'css/faculty_Home.css' %}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/faculty_Home.css' %}">
+
 {% endblock %}
 
 {% block main %}
-    <br>
 
     <div class="row">
-          <div class="col l6 offset-l3 m9 offset-m1">
-          <a class="waves-effect waves-light btn"><i class="material-icons">note_add</i> Notes</a>
-          <a class="waves-effect waves-light btn"><i class="material-icons">delete</i> Delete</a>
-          <a class="waves-effect waves-light btn"><i class="material-icons">schedule</i> Time Table</a>
-               <a class="waves-effect waves-light btn"><i class="material-icons">today</i> Today</a>
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://placekitten.com/400/200">
-            </div>
-            <div class="card-content">
-              <a class="btn-floating btn-large waves-effect waves-light red activator">
-                <i class="material-icons">add</i>
-              </a>
-              <span class="card-title  grey-text text-darken-4">Send Notification </span>
-              <p><a href="#" class="activator">This is a link</a></p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title blue-color">Card Title
-               <i class="material-icons">clear</i>
-              </span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div>
-          </div>
-           <div class="col l6 offset-l3 m9 offset-m1">
-           <div class="card ">
-          <div class="card-header">
-            <img src="https://s-media-cache-ak0.pinimg.com/originals/3b/f0/77/3bf0775b0d234545d14a5941be966ab2.jpg"/>
-          </div>
-          <div class="card-content">
-            <h3>NAME</h3>
-            <h4>DEPT--POSITION </h4>
-            <p>DETAILS</p>
-          </div>
-          <div class="card-footer">
-            <ul>
-              <li>
-                <a href="#"><i class="fa fa-envelope"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-phone-square"></i></a>
-              </li>
-            </ul>
-          </div>
-            </div>
+        <div class="container-fluid" id="topphoto">
+
         </div>
     </div>
+
 {% endblock %}
 
 
