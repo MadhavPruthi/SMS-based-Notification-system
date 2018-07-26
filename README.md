@@ -35,18 +35,18 @@ And we are done!
 
 # Preview of the project
 
-Home Page
+> Home Page
 
 ![screenshot 7](https://user-images.githubusercontent.com/37483320/43248981-1a411ec0-90d7-11e8-817e-bf905db16b0c.png)
 
-Login Page
+> Login Page
 
 ![screenshot 4](https://user-images.githubusercontent.com/37483320/43248983-1a94bc74-90d7-11e8-9737-37ad9e116266.png)
 
-Faculty/Staff Profile Page
+> Faculty/Staff Profile Page
 
 ![screenshot 6](https://user-images.githubusercontent.com/37483320/43248979-19d9e70a-90d7-11e8-8564-3d344707de5f.png)
 
-Student Dashboard
+> Student Dashboard
 
 ![screenshot 5](https://user-images.githubusercontent.com/37483320/43248984-1ad3a3b2-90d7-11e8-837a-0c541a767932.png)
