@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/37483320/43250835-e547f810-90db-11e8-9b92-d5c8a3949eba.png">
+</p>
+
 # SMS-based-Notification-system
 Notification-System is a project which will help faculty to intimidate students about any important information like Schedule Changes, any upcoming seminar and other information. This information will be shared through SMS. Through other platforms like whatsapp, sometimes information got missed due to network gliches or any else reason, due to which we adopted SMS for message sharing.
 Also, Additional functionality of asking queries has also been added. With this, Students can ask their queries to their respective teachers easily
