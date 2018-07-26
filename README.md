@@ -4,7 +4,7 @@ Also, Additional functionality of asking queries has also been added. With this,
 
 # Technologies Used
 
-This is built on django framework along with HTML, CSS and Bootstrap as front-end framework.
+This is built on django framework along with HTML, CSS and Bootstrap as front-end framework. At some instances, AJAX is also used to provide the touch of asynchronous manner.
 To handle the message queuing, Django-background-tasks has been used which schedule the messages according to time and date set by Faculty.
 Nexmo has been used as SMS API service.
 
