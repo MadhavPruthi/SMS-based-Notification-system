@@ -14,6 +14,7 @@ virtualenv -p python3 VirtualEnvNotification
 ```
 Next activate it through following command:
 ```
+cd VirtualEnvNotification
 cd Scripts/activate
 ```
 Install all the dependencies:
