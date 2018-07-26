@@ -34,6 +34,8 @@ python manage.py process_tasks
 ```
 And we are done!
 
+**For Security purposes, the credentials of nexmo has not been provided along this. Create an account on nexmo website and procure your credentials and integrate them accordingly**
+
 # Preview of the project
 
 > Home Page
@@ -56,4 +58,4 @@ And we are done!
 
 ![Student Dashboard](https://user-images.githubusercontent.com/37483320/43248984-1ad3a3b2-90d7-11e8-837a-0c541a767932.png)
 
-**For Security purposes, the credentials of nexmo has not been provided along this. Create an account on nexmo website and procure your credentials and integrate them accordingly**
+
