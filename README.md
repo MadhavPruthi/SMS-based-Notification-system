@@ -1,5 +1,6 @@
 # SMS-based-Notification-system
 Notification-System is a project which will help faculty to intimidate students about any important information like Schedule Changes, any upcoming seminar and other information. This information will be shared through SMS. Through other platforms like whatsapp, sometimes information got missed due to network gliches or any else reason, due to which we adopted SMS for message sharing.
+Also, Additional functionality of asking queries has also been added. With this, Students can ask their queries to their respective teachers easily
 
 # Technologies Used
 
