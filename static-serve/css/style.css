@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.parallax1 {
+    /* The image used */
+
+    background-image: url('../Images/TechBackNew.jpg');
+
+    /* Set a specific height */
+    min-height: 320px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    /* The image used */
+
+    background-image: url('../Images/TechBack2.jpg');
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#text1{
+    padding-top: 100px;
+    padding-left: 150px;
+    width: 700px;
+    margin: 0 auto;
+    color: white;
+    min-height: 300px;
+    font-size: 20px;
+
+}
+
+#image{
+    padding-top: 70px;
+    height: 50px;
+
+}
+
+.responsive-img{
+    border-radius: 15px;
+}
+
+.card-panel{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#first-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

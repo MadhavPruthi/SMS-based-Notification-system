@@ -3,10 +3,10 @@
 .parallax1 {
     /* The image used */
 
-    background-image: url('../Images/landscape.jpg');
+    background-image: url('../Images/TechBackNew.jpg');
 
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 320px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -17,10 +17,10 @@
 .parallax2 {
     /* The image used */
 
-    background-image: url('../Images/landscape2.jpg');
+    background-image: url('../Images/TechBack2.jpg');
 
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 300px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -31,6 +31,7 @@
 
 #text1{
     padding-top: 100px;
+    padding-left: 150px;
     width: 700px;
     margin: 0 auto;
     color: white;
@@ -39,20 +40,22 @@
 
 }
 
-#maintext1{
+#image{
+    padding-top: 70px;
+    height: 50px;
 
-    font-family: 'Pacifico', cursive;
-      text-decoration:none;
-      color:white;
-      transition: all .2s ease-in;
 }
 
-#maintext1:hover{
-      padding:2px;
-      font-size: 40px;
+.responsive-img{
+    border-radius: 15px;
 }
 
 .card-panel{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+#first-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

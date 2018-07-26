@@ -1,6 +1,8 @@
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import nexmo
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -24,11 +26,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'source.accounts',
     'phonenumber_field',
     'background_task',
-    'query',
-    'Notification',
+    'source.query',
+    'source.Notification',
 
 ]
 
@@ -122,9 +125,13 @@ STATICFILES_DIRS = [
 # will be served
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static-serve")
 
-# Nexmo settings
-
 # Nexmo Credentials
 
 KEY = '4fe6b36d'
 SECRET = '36b1dda4afbc64a8'
+
+client = nexmo.Client(key=KEY , secret=SECRET)
+
+# background tasks settings
+
+BACKGROUND_TASK_RUN_ASYNC = True

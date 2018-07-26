@@ -10,22 +10,35 @@
     <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel = "stylesheet"
-     href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+     href = "{% static 'materialize/css/materialize.css' %}">
 
     <script src = "{% static 'materialize/js/jquery.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script src = "{% static 'materialize/js/materialize.js' %}"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>{% block title %} {% endblock %}</title>
 
     <style>
-        .brand-logo p{
+        .brand-logo p {
             font-size: 30px;
             margin-top: -1px;
             margin-left: 5px;
         }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+          }
+
+          main {
+            flex: 1 0 auto;
+          }
+        footer.page-footer {
+            padding-top: 0px;
+          }
     </style>
 
     {% block style %}
@@ -38,11 +51,16 @@
 
     <div class="navbar-fixed">
         <nav>
-          <div class="nav-wrapper">
-              &nbsp;<a href="#" class="brand-logo"><p>Notification System</p></a>
+          <div class="nav-wrapper light-blue">
+              &nbsp;<a href="{% url 'main' %}" class="brand-logo"><p>Notification System</p></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="">About</a></li>
-              <li><a href="">Contact Us</a></li>
+
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'contact' %}">Contact Us</a></li>
+              {% if request.user.is_authenticated %}
+                  <li><a href="{% url 'accounts:profile' %}">Profile</a></li>
+                  <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
+              {% endif %}
             </ul>
           </div>
         </nav>
@@ -51,27 +69,11 @@
     {% block main %}
     {% endblock %}
 
-    <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">SMS based Notification System</h5>
-                <p class="grey-text text-lighten-4">We are here to make your life easy.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Help Us Improve</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Donate Us!</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    <footer class="page-footer light-blue">
           <div class="footer-copyright">
             <div class="container">
             © 2018 Punjab Engineering College
             <a class="grey-text text-lighten-4 right" href="#!">Social links will come here</a>
-
             </div>
           </div>
     </footer>

@@ -12,25 +12,28 @@
 
 
     <div class="container-fluid">
-        <div class="row center-align teal lighten-2">
-            <div class="col s4 offset-s4">
-                <div class="card-panel transparent">
+        {% if not request.user.is_authenticated %}
+        <div class="row center-align teal lighten-1" id="section1">
+            <div class="col s4 offset-s4" >
+                <div class="transparent" id="first-section">
 
-                <a style="margin-right: 10px " href="{% url 'accounts:login' %}" class="waves-effect waves-light btn-large green accent-2"><i class="material-icons left">account_circle</i>LOGIN</a>
-                <a class="waves-effect waves-light btn-large amber accent-2"><i class="material-icons right">add_circle_outline</i>SIGN UP</a>
-                <h4 id="maintext1">GET INTO IT</h4>
-
+                <a style="margin-right: 10px " href="{% url 'accounts:login' %}" class="waves-effect waves-light btn-large light-blue"><i class="material-icons left">account_circle</i>LOGIN</a>
+                <a href="{% url 'accounts:signup' %}"class="waves-effect waves-light btn-large orange"><i class="material-icons right">add_circle_outline</i>SIGN UP</a>
                 </div>
             </div>
         </div>
+        {% endif %}
     <div class="parallax1"></div>
 
-    <div class="card-panel center-align teal lighten-2">
-        <div class="text-success" id="text1">
+    <div class="row center-align teal lighten-1" id="second-section">
+        <div class="col s4 offset-s2" id="text1">
 
         Notification-System is a project which will help faculty to intimidate students about any important information
         like Schedule Changes, any upcoming seminar and other information. This information will be shared through SMS.
+        </div>
 
+        <div class="col s3 offset-s1" id="image">
+            <img src="{% static 'Images/message.jpg' %}" class="responsive-img">
         </div>
     </div>
 

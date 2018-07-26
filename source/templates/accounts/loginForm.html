@@ -10,35 +10,39 @@
 {% block main %}
 
 
-     <div id="parallax1"></div>
+    <div class = "iris">
+       <div class = "card transparent z-depth-5">
+       </div>
+    </div>
 
-     <div id="main1">
+    <div id="main1">
 
         <div class="col l6 offset-l3 m9 offset-m1">
 
             <div id="form1">
 
+
                 <h4 class="center-align">STUDENT</h4>
                 <h5 class="">-LOGIN-</h5>
 
-                <form method="post" action="{% url 'accounts:login' %}">
+                <form method="post" action="{% url 'accounts:login' %}" id="student_form">
 
                     {% csrf_token %}
 
 
                     <div class="input-field">
-                        <input type="text" name="username" required>
+                        <input type="text" name="username" id="username" required>
                         <label class="active" for="studentid">Student ID</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="password" name="password" required>
+                        <input type="password" name="password" id="password" required>
                         <label class="active" for="password">Password</label>
                     </div>
 
                     <br>
 
-                    <button class="btn waves-effect waves-light btn-large" type="submit" name="action" value="student">Login
+                    <button class="btn waves-effect waves-light btn-large" type="submit" id="submit" name="action" value="student">Login
                         <i class="material-icons right">send</i>
                     </button>
 
@@ -51,33 +55,31 @@
         </div>
     </div>
 
-
-     <div id="main2">
+    <div id="main2">
         <div class="col l6 offset-l3 m9 offset-m1">
             <div id="form2">
 
                 <h4 class="center-align">STAFF</h4>
                 <h5 class="">-LOGIN-</h5>
 
-                <form method="post" action="{% url 'accounts:login' %}">
+                <form method="post" action="{% url 'accounts:login' %}" id="staff_form">
 
                     {% csrf_token %}
 
-                    <input type="hidden" name="check" value="staff">
 
                     <div class="input-field">
-                        <input type="text" name="username" required>
+                        <input type="text" name="username" id="username1" required>
                         <label class="active" for="facultyid">Faculty ID</label>
                     </div>
 
                     <div class="input-field">
-                        <input type="password" name="password" required>
+                        <input type="password" name="password" id="password1" required>
                         <label class="active" for="password">Password</label>
                     </div>
 
                     <br>
 
-                    <button class="btn waves-effect waves-light btn-large" type="submit" name="action" value="staff">Login
+                    <button class="btn waves-effect waves-light btn-large" type="submit" id="submit_staff" name="action" value="staff">Login
                         <i class="material-icons right">send</i>
                     </button>
 

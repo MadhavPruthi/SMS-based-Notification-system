@@ -51,7 +51,7 @@
     background-image: url('../Images/landscape.jpg');
 
     /* Set a specific height */
-    min-height: 800px;
+    height: 600px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -87,8 +87,14 @@
     100%{transform: translate(-50%,-50%) rotateY(0deg);}
 }
 
-
-
+.iris {
+    margin-top: -15px;
+    margin-bottom: -20px;
+    background-image: url("../Images/TechBack.jpg");
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: cover;
+}
 
 
 

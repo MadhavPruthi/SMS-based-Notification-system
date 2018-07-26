@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+#main1,#main2
+{
+    height:850px;
+    width: 600px;
+    box-shadow: 0 0 0 30px rgba(255,255,255,.2);
+    background-color: white;
+    border-radius: 0%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-top: 70px;
+    transform: translate(-50%,-50%) rotateY(0deg);
+}
+
+
+#form1,#form2
+{
+    height:400px;
+    width: 500px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#form1 button, #form2 button{
+    position: fixed;
+    top:160%;
+    left:25%;
+}
+#form1 h4, #form2 h4{
+    font-weight: bold;
+    color: #e84a5f;
+}
+
+#form1 h5, #form2 h5{
+
+    color: #ff847c;
+    position: relative;
+    padding-bottom: 13px;
+    margin-top: -15px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 8px;
+    left: 35%;
+    font-size: 22px;
+}
+
+#form2 h5
+{
+    letter-spacing: 8px;
+}
+
+#select1{
+    width: 65%;
+}
+
+#select2{
+    width: 30%;
+    position: relative;
+    top:-60px;
+    right: -70%;
+    margin-bottom: -50px;
+}
+
+
+
+.parallax1 {
+    /* The image used */
+
+    background-image: url('../Images/landscape.jpg');
+
+    /* Set a specific height */
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main1,#form1{
+    -webkit-backface-visibility:hidden;
+    -webkit-animation-duration:2s;
+}
+#main2,#form2{
+    -webkit-backface-visibility:hidden;
+    -webkit-transform:translate(-50%,-50%) rotateY(180deg);
+    -webkit-animation-duration:2s;
+}
+
+@-webkit-keyframes showfaculty{
+    0%{transform: translate(-50%,-50%) rotateY(0deg);}
+    100%{transform: translate(-50%,-50%) rotateY(180deg);}
+}
+@-webkit-keyframes hidestudent{
+    0%{transform: translate(-50%,-50%) rotateY(180deg);}
+    100%{transform: translate(-50%,-50%) rotateY(0deg);}
+}
+@-webkit-keyframes showstudent{
+    0%{transform: translate(-50%,-50%) rotateY(0deg);}
+    100%{transform: translate(-50%,-50%) rotateY(180deg);}
+}
+@-webkit-keyframes hidefaculty{
+    0%{transform: translate(-50%,-50%) rotateY(180deg);}
+    100%{transform: translate(-50%,-50%) rotateY(0deg);}
+}
+

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+#main1,#main2
+{
+    height:400px;
+    width: 400px;
+    box-shadow: 0 0 0 30px rgba(255,255,255,.2);
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotateY(0deg);
+}
+
+
+#form1,#form2
+{
+    height:300px;
+    width: 300px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#form1 button, #form2 button{
+    left: 25%;
+}
+#form1 h4, #form2 h4{
+    font-weight: bold;
+    color: #e84a5f;
+}
+
+#form1 h5, #form2 h5{
+
+    color: #ff847c;
+    position: relative;
+    padding-bottom: 13px;
+    margin-top: -15px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 8px;
+    left: 28%;
+    font-size: 22px;
+}
+
+
+#parallax1 {
+    /* The image used */
+
+    background-image: url('../Images/landscape.jpg');
+
+    /* Set a specific height */
+    height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main1,#form1{
+    -webkit-backface-visibility:hidden;
+    -webkit-animation-duration:2s;
+}
+#main2,#form2{
+    -webkit-backface-visibility:hidden;
+    -webkit-transform:translate(-50%,-50%) rotateY(180deg);
+    -webkit-animation-duration:2s;
+}
+
+@-webkit-keyframes showfaculty{
+    0%{transform: translate(-50%,-50%) rotateY(0deg);}
+    100%{transform: translate(-50%,-50%) rotateY(180deg);}
+}
+@-webkit-keyframes hidestudent{
+    0%{transform: translate(-50%,-50%) rotateY(180deg);}
+    100%{transform: translate(-50%,-50%) rotateY(0deg);}
+}
+@-webkit-keyframes showstudent{
+    0%{transform: translate(-50%,-50%) rotateY(0deg);}
+    100%{transform: translate(-50%,-50%) rotateY(180deg);}
+}
+@-webkit-keyframes hidefaculty{
+    0%{transform: translate(-50%,-50%) rotateY(180deg);}
+    100%{transform: translate(-50%,-50%) rotateY(0deg);}
+}
+
+.iris {
+    margin-top: -15px;
+    margin-bottom: -20px;
+    background-image: url("../Images/TechBack.jpg");
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: cover;
+}
+
+
+
+
+

@@ -4,17 +4,217 @@
 {% block style %}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{% static 'css/faculty_Home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/facultyhome.css' %}">
+
+    <script>
+          $(document).ready(function(){
+            $('.modal').modal();
+            });
+
+          $(document).ready(function(){
+            $('.tooltipped').tooltip();
+          });
+
+     $(document).ready(function(){
+        $('select').material_select();
+      });
+    </script>
 
 {% endblock %}
 
+
 {% block main %}
 
-    <div class="row">
-        <div class="container-fluid" id="topphoto">
 
+        <div class="container">
+
+          <div id="profile-page" class="section">
+
+            <div id="profile-page-header" class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="{% static 'Images/user-profile-bg.jpg' %}" alt="user background">
+                </div>
+                <figure class="card-profile-image">
+                    <img src="{% static 'Images/img_6.jpg' %}" alt="profile image" class="circle z-depth-2 responsive-img activator">
+                </figure>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s3 offset-s2">
+                        <h4 class="card-title grey-text text-darken-4">{{ object.Name }}</h4>
+                        <p class="medium-small grey-text">{{ object.get_designation_display }}</p>
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 class="card-title grey-text text-darken-4">{{ object.FacultyID }}</h4>
+                        <p class="medium-small grey-text">ID</p>
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 class="card-title grey-text text-darken-4">{{ object.get_department_display }} Engineering</h4>
+                        <p class="medium-small grey-text">Department</p>
+                    </div>
+
+                    <div class="col right">
+                        <a href="{% url 'notification:CreateNotification' %}" class="btn orange waves-yellow waves-effect">Create or Schedule Message </a>
+
+                        <p class="center-align"><span class="material-icons medium">mail_outline</span></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div id="profile-page-content" class="row">
+
+              <div id="profile-page-sidebar" class="col s12 m4">
+
+              <!-- Modal Trigger -->
+              <a class="tooltipped waves-effect waves-light orange btn large modal-trigger btn-floating" data-position="right" data-tooltip="Set Up the Courses" href="#modal1"><i class="material-icons">settings</i></a>
+
+                <!-- Profile About  -->
+                <div class="card light-blue">
+                  <div class="card-content white-text">
+                    <span class="card-title">About Me!</span>
+                    <p>Something About Staff</p>
+                  </div>
+                </div>
+                <!-- Profile About  -->
+
+                <!-- Profile About Details  -->
+                <ul id="profile-page-about-details" class="collection z-depth-1">
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-action-wallet-travel"></i> E-mail</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">{{ object.Email }}</div>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-poll"></i> Contact Number</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">{{ object.ContactNumber }}</div>
+                    </div>
+                  </li>
+
+                </ul>
+                <!--/ Profile About Details  -->
+
+
+                <ul id="task-card" class="collection with-header">
+                  <li class="collection-header orange">
+                      <h4 class="task-card-title">Recent Notifications Sent</h4>
+                  </li>
+                    {% for message in all_messages %}
+                  <li class="collection-item ">
+                      <input type="checkbox" id="task1" />
+                      <label class="truncate" for="task1">{{ message.title }} <a href="#" class="secondary-content"><span class="ultra-small">{{ message.DateTime|timesince }}</span></a>
+                      </label>
+                  </li>
+                    {% endfor %}
+
+                </ul>
+
+                <!-- task-card -->
+                <ul id="task-card" class="collection with-header">
+                  <li class="collection-header cyan">
+                      <h4 class="task-card-title">My Task <a href="#" class="small white-text right">Add Task</a> </h4>
+                      <p class="task-card-date">Date</p>
+                  </li>
+                  <li class="collection-item dismissable">
+                      <input type="checkbox" id="task1" />
+                      <label for="task1">Task1 <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                      </label>
+                      <span class="task-cat teal">Tag</span>
+                  </li>
+
+                </ul>
+                <!-- task-card -->
+
+              </div>
+
+
+                <!-- profile-page-wall -->
+              <div id="profile-page-wall" class="col s12 m8">
+
+                <!-- profile-page-wall-posts -->
+                <div id="profile-page-wall-posts" class="row">
+                  <div class="col s12">
+
+                      <h3 class="light-blue-text">Queries</h3>
+                      <!-- post here -->
+
+                  {% if Questions %}
+                      {% for question in Questions %}
+                      <div id="profile-page-wall-post" class="card">
+
+
+                        <div class="card-profile-title">
+                          <div class="row">
+                            <div class="col s1">
+                              <img src="{% static 'Images/profile.png' %}" alt="" class="circle responsive-img valign profile-post-uer-image">
+                            </div>
+                            <div class="col s10">
+                              <p class="grey-text text-darken-4 margin">{{ question.QueriedBy }}</p>
+                              <span class="grey-text text-darken-1 ultra-small">{{ question.AskedAt }}</span>
+                            </div>
+                            <div class="col s1 right-align">
+                              <i class="mdi-navigation-expand-more"></i>
+                            </div>
+                          </div>
+                        <form method="post" action="{% url 'query:QuestionAnswer' %}">
+                            {% csrf_token %}
+                        <div class="card-content">
+                          <p>{{ question.QuestionTitle }}</p>
+                        </div>
+
+                            <input type="hidden" name="pk" value="{{ question.pk }}">
+                        <div class="card-action row">
+
+                          <div class="input-field col s8 margin" >
+                            <input id="profile-comments" type="text" class="validate margin" name="AnswerTitle">
+                            <label for="profile-comments" class="">Answer</label>
+                          </div>
+
+                            <button class="btn waves-teal waves-effect right" type="submit">Answer</button>
+                        </div>
+                            </form>
+                      </div>
+                  </div>
+
+                      {% endfor %}
+
+                      {% else %}
+                      <h6>No Queries Yet</h6>
+                  {% endif %}
+
+                      <!--/post here -->
+
+                </div>
+                <!--/ profile-page-wall-posts -->
+
+              </div>
+              <!--/ profile-page-wall -->
+
+            </div>
+
+
+          </div>
+
+          </div>
+
+       </div>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>FILL THE COURSES YOU TEACH</h4>
+                <form>
+                    {{ form.as_p }}
+                </form>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
         </div>
-    </div>
+        </div>
+
+
+
 
 {% endblock %}
 

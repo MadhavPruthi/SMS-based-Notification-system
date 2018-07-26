@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load humanize %}
+
+{% block style %}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/studenthome.css' %}">
+
+
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+            });
+
+          $(document).ready(function(){
+            $('.tooltipped').tooltip();
+          });
+    </script>
+
+{% endblock %}
+
+
+{% block main %}
+
+
+        <div class="container">
+
+          <div id="profile-page" class="section">
+
+            <div id="profile-page-header" class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="{% static 'Images/user-profile-bg.jpg' %}" alt="user background">
+                </div>
+                <figure class="card-profile-image">
+                    <img src="{% static 'Images/profile.png' %}" alt="profile image" class="circle z-depth-2 responsive-img activator">
+                </figure>
+                <div class="card-content">
+                  <div class="row">
+                    <div class="col s3 offset-s2">
+                        <h4 class="card-title grey-text text-darken-4">{{ object.Name }}</h4>
+                        <p class="medium-small grey-text">Student</p>
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 class="card-title grey-text text-darken-4">{{ object.StudentID }}</h4>
+                        <p class="medium-small grey-text">ID</p>
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 class="card-title grey-text text-darken-4">{{ object.get_branch_display }}</h4>
+                        <p class="medium-small grey-text">Department</p>
+                    </div>
+                    <div class="col s2 center-align">
+                        <h4 class="card-title grey-text text-darken-4">{{ object.YearOfStudy|ordinal }}</h4>
+                        <p class="medium-small grey-text">Year</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div id="profile-page-content" class="row">
+
+              <div id="profile-page-sidebar" class="col s12 m4">
+
+              <!-- Modal Trigger -->
+              <a class="tooltipped waves-effect waves-light btn orange modal-trigger" data-position="right" data-tooltip="Set Up the Courses" href="#modal1"><i class="material-icons">settings</i></a>
+                <!-- Profile About  -->
+                <div class="card light-blue">
+                  <div class="card-content white-text">
+                    <span class="card-title">About Me!</span>
+                    <p>Something About Student</p>
+                  </div>
+                </div>
+                <!-- Profile About  -->
+
+                <!-- Profile About Details  -->
+                <ul id="profile-page-about-details" class="collection z-depth-1">
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-action-wallet-travel"></i> E-mail</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">{{ object.Email }}</div>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="row">
+                      <div class="col s5 grey-text darken-1"><i class="mdi-social-poll"></i> Contact Number</div>
+                      <div class="col s7 grey-text text-darken-4 right-align">{{ object.ContactNumber }}</div>
+                    </div>
+                  </li>
+
+                </ul>
+                <!--/ Profile About Details  -->
+
+
+                <ul id="task-card" class="collection with-header">
+                  <li class="collection-header orange">
+                      <a href="#" class="white-text large">Recent Announcements For You</a>
+                  </li>
+                    {% for message in all_messages %}
+                  <li class="collection-item ">
+                      <input type="checkbox" id="task1" />
+                      <label class="truncate" for="task1">{{ message.title }} <a href="#" class="secondary-content"><span class="ultra-small">{{ message.DateTime|naturaltime }}</span></a>
+                      </label>
+                  </li>
+                    {% endfor %}
+
+                </ul>
+
+                <!-- task-card -->
+                <ul id="task-card" class="collection with-header">
+                  <li class="collection-header cyan">
+                      <h4 class="task-card-title">My Task</h4><hr>
+                      <p class="task-card-date">
+                        <script>
+                        var dt = new Date();
+                        document.write((("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) + " " + (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2)));
+                        </script>
+                      </p>
+
+                  </li>
+                  <li class="collection-item dismissable">
+                      <input type="checkbox" id="task1" />
+                      <label for="task1">Task1 <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                      </label>
+                      <span class="task-cat teal">Tag</span>
+                  </li>
+
+                </ul>
+                <!-- task-card -->
+
+              </div>
+
+                <!-- profile-page-wall -->
+              <div id="profile-page-wall" class="col s12 m8">
+
+                <!-- profile-page-wall-posts -->
+                <div id="profile-page-wall-posts" class="row">
+                  <div class="col s12">
+
+                      <h3 class="light-blue-text">Ask your Queries Here!</h3>
+                      <!-- post here -->
+                      <div id="profile-page-wall-post" class="card">
+
+                        <div class="card-content">
+                          <form method="post" action="{% url 'query:QuestionAsk' %}">
+                          {% csrf_token %}
+
+                          <div class="row">
+                              <div class="col s10">
+                                    <div class="input-field">
+                                        <input type="text" name="QuestionTitle" id="query" required>
+                                        <label class="active" for="query">Your Query?</label>
+                                    </div>
+
+                                  <div class="input-field" id="select1">
+
+                                    <select aria-required="true" class="browser-default" name="CreatedFor" id="CreatedFor" required>
+
+                                    <option value="" disabled selected>To whom it is concerned</option>
+
+                                        {% for teacher in all_teachers %}
+                                        <option value={{ teacher.FacultyID }}>{{ teacher.Name }}</option>
+                                        {% endfor %}
+
+
+                                    </select>
+
+                                  </div>
+                              </div>
+                          <div class="s2 center vertical" style="top: 5vh; position: relative">
+                              <button id="submit" class="btn large waves-effect waves-light">Ask</button>
+                          </div>
+                          </div>
+                          </form>
+                        </div>
+
+                      </div>
+
+                  </div>
+                      <!--/post here -->
+
+                </div>
+              <h3 class="orange-text">Response to your previous queries</h3>
+              <div class="content">
+                  {% if Responses %}
+                      {% for response in Responses %}
+                          {% if forloop.counter < 6 %}
+                          <div id="profile-page-wall-post" class="card">
+
+                                <div class="card-content">
+                                  <h5 class="orange-text"><span class="blue-grey-text darken-2">{{ forloop.counter }}. Query-</span> {{ response.Question.QuestionTitle }}</h5>
+                                    <hr>
+                                    <h6 class="light-blue-text"><span class="blue-grey-text">Response-</span> {{ response.AnswerTitle }}</h6>
+                                </div>
+
+                          </div>
+                          {% endif %}
+                  {% endfor %}
+                      {% else %}
+                      <h5> No Responses Yet!</h5>
+                  {% endif %}
+              </div>
+                <!--/ profile-page-wall-posts -->
+
+              </div>
+              <!--/ profile-page-wall -->
+
+            </div>
+
+
+          </div>
+
+          </div>
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>FILL THE COURSES YOU HAVE IN THIS SEMESTER</h4>
+              {{ form }}
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+            </div>
+        </div>
+
+
+{% endblock %}
+
+{% block js %}
+
+    <script src="{% static 'js/studenthome.js' %}"></script>
+
+{% endblock %}

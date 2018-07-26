@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+
+{% endblock %}
+
+{% block main %}
+
+    <script>
+    $(document).ready(function(){
+    $('.datepicker').datepicker();
+    });
+
+    $('.chip').chips();
+
+    </script>
+
+    <div class="container">
+
+        <h2 class="orange-text text-darken-1">MESSAGE CREATION</h2>
+
+        {% if errors %}
+            <div class="chip red white-text">
+                {{ errors }}
+                <i class="close material-icons">close</i>
+              </div>
+        {% endif %}
+
+        <div class="card horizontal">
+            <div class="card-stacked">
+                <form method="post" action="{% url 'notification:CreateNotification' %}" >
+
+                    {% csrf_token %}
+
+                    <div class="card-content">
+                        <div class="input-field">
+                            <input type="text" id="title" name="title" autocomplete="off" required>
+                            <label for="title">Title</label>
+                        </div>
+
+                        <div class="input-field">
+                            <input type="text" id="message" name="message" autocomplete="off">
+                            <label for="message">Message</label>
+                        </div>
+
+                        <div class="input-field" id="select1">
+
+                            <select name="Course" class="browser-default" required>
+
+                                <option value="" disabled selected>Course</option>
+                                {% for course in Courses %}
+                                    <option value="{{ course.CourseId }}">{{ course.CourseName }}</option>
+                                {% endfor %}
+
+
+                            </select>
+
+                        </div>
+
+                        <div class="input-field">
+                          <input id="date" type="text" name="date" class="datepicker" required>
+                          <label for="date">Schedule Date</label>
+                        </div>
+
+                        <div class="input-field">
+                          <input id="time" type="text" name="time" class="timepicker" required>
+                          <label for="time">Schedule Time</label>
+                        </div>
+
+                        <h5>To:</h5>
+                        <p>
+                          <label>
+                            <input name="group1" type="radio" value="CSE" checked />
+                            <span>Whole Batch</span>
+                          </label>
+                        </p>
+
+                        <p>
+                          <label>
+                            <input name="group1" type="radio" value="CSEA" />
+                            <span>CSEA</span>
+                          </label>
+                        </p>
+
+                        <p>
+                          <label>
+                            <input name="group1" type="radio" value="CSEB"/>
+                            <span>CSEB</span>
+                          </label>
+                        </p>
+
+                    </div>
+
+                    <div class="card-action">
+                      <button class="waves-teal btn">SEND</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+
+
+{% endblock %}
