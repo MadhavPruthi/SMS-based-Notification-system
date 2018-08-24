@@ -127,8 +127,8 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static-serve")
 
 # Nexmo Credentials
 
-KEY = '4fe6b36d'
-SECRET = '36b1dda4afbc64a8'
+KEY = # Put here key
+SECRET = # Put here secret key
 
 client = nexmo.Client(key=KEY , secret=SECRET)
 
