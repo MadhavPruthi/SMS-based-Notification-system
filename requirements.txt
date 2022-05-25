@@ -12,7 +12,7 @@ idna==2.7
 nexmo==2.1.0
 phonenumberslite==8.9.7
 pycparser==2.18
-PyJWT==1.6.4
+PyJWT==2.4.0
 pytz==2018.4
 requests==2.19.1
 six==1.11.0
